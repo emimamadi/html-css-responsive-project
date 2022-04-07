@@ -1,0 +1,560 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  src: url("/fonts/Roboto-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Robotolight";
+  font-style: normal;
+  src: url("/fonts/Roboto-Light.ttf") format("ttf");
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  background: white;
+  color: black;
+  height: 50px;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  width: 20%;
+  justify-content: right;
+  align-self: center;
+}
+.logo > .logo_container {
+  position: relative;
+  bottom: 0.3rem
+}
+
+nav {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+  margin: 10px;
+}
+
+nav > ul > li > a {
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+}
+nav > ul > li > a > sub {
+  color: white;
+  background-color: blue;
+  border-radius: 10px;
+  padding: 3px 10px;
+  font-size: 10px;
+}
+
+.list {
+  width: 20%;
+  display: flex;
+  justify-content: left;
+}
+
+.pics {
+  display: flex;
+}
+
+.pics > div {
+  width: 25%;
+  height: 300px;
+  position: relative;
+  border: 2px solid white;
+}
+
+.pics > div > img {
+  width: 100%;
+  height: 100%;
+}
+
+.pics > div > div {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 8rem;
+  left: 1rem;
+  color: white;
+}
+
+.pics > div > div > .tag {
+  background: green;
+  text-transform: uppercase;
+  /* position: absolute; */
+  z-index: 5;
+  border-radius: 10px;
+  padding: 5px;
+  color: white;
+  width: 60px;
+}
+
+.pics > div > div > h1 {
+  /* position: absolute; */
+  color: white;
+}
+
+.pic4 > div > .tag {
+  background-color: red !important;
+}
+
+.pics > div > div > .anna {
+  /* position: absolute; */
+  color: white;
+  text-transform: capitalize;
+}
+
+/*-----------------------------    ------------------------------------------------------- */
+
+.busi {
+  width: 80%;
+  margin: 80px auto;
+  height: 800px;
+}
+
+.busi > p {
+  padding: 14px 0px;
+}
+
+.first-row-bus {
+  display: flex;
+  margin-bottom: auto;
+}
+
+.first-row-bus > div {
+  width: 32%;
+  height: auto;
+  margin-right: 40px;
+  position: relative;
+}
+
+.first-row-bus > div > img {
+  width: 100%;
+  height: 250px;
+}
+
+.first-row-bus > div > span {
+  background: rgb(173, 39, 173);
+  color: white;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  border-radius: 10px;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.second-row-bus {
+  display: flex;
+}
+
+.second-row-bus > div {
+  width: 32%;
+  height: auto;
+  margin-right: 40px;
+  position: relative;
+}
+
+.second-row-bus > div > img {
+  width: 100%;
+  height: 250px;
+}
+
+.second-row-bus > div > span {
+  background: rgb(173, 39, 173);
+  color: white;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  border-radius: 10px;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.editor {
+  width: 102%;
+  height: 700px;
+  background-color: #f8edce;
+}
+
+.editor > h2 {
+  padding: 32px 0px 25px 73px;
+}
+
+.editor_child {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.bigpic {
+  width: 70%;
+  height: 586px;
+  margin-right: 30px;
+  position: relative;
+}
+
+.bigpic > img {
+  height: 100%;
+  width: 100%;
+}
+
+.bigpic > span {
+  background-color: red;
+  color: white;
+  position: absolute;
+  border-radius: 10px;
+  padding: 4px 15px;
+  bottom: 10rem;
+  left: 1rem;
+  text-transform: uppercase;
+}
+
+.bigpic > .info1 {
+  text-transform: capitalize;
+  position: absolute;
+  color: white;
+  bottom: 2rem;
+  left: 1rem;
+}
+
+.smallpic {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.smallpic > div {
+  margin-bottom: 1.8rem;
+  position: relative;
+}
+
+.smallpic > div > img {
+  height: 122px;
+  width: 240px;
+}
+
+.smallpic > div > span {
+  position: absolute;
+  left: 15rem;
+  background: purple;
+  padding: 4px 10px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.smallpic > div > h4 {
+  position: absolute;
+  top: 2rem;
+  left: 15rem;
+}
+
+.smallpic > div > p {
+  position: absolute;
+  top: 85%;
+  left: 15rem;
+}
+
+footer {
+  display: flex;
+  font-family: Roboto;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  background-color: hsl(196, 54%, 35%);
+  padding: 40px 20px;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 50%;
+}
+.news > h3 {
+  padding: 30px 0px 10px 40px;
+  font-size: 32px;
+}
+.news > p {
+  padding: 0px 0px 10px 40px;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.news > .input > input[type="text"] {
+  margin-left: 5%;
+  width: 38%;
+  height: 35px;
+}
+
+.news > .input > input[type="button"] {
+  width: 156px;
+  height: 36px;
+  margin-left: -5px;
+  color: white;
+  background-color: inherit;
+  border: 2px solid white;
+}
+
+.sotoon {
+  color: white;
+  display: flex;
+  width: 50%;
+}
+
+.sotoon > .sotoon1 {
+  width: 50%;
+}
+
+.sotoon1 > .schedule > h2 {
+  padding-top: 36px;
+  padding-bottom: 10px;
+}
+.schedule > p {
+  padding: 5px 0px;
+}
+
+.sotoon1 > .address {
+  padding-top: 15px;
+}
+
+.sotoon1 > .address > h2 {
+  padding-bottom: 15px;
+}
+
+.sotoon1 > .address > span {
+  color: white;
+}
+
+.sotoon > .sotoon2 {
+  width: 50%;
+}
+
+.sotoon2 > .follow {
+  padding-top: 36px;
+}
+
+.follow > a {
+  display: flex;
+  flex-direction: column;
+  padding-top: 12px;
+  color: white;
+  text-decoration: underline;
+}
+
+.contact > h2 {
+  padding-top: 19px;
+  padding-bottom: 17px;
+}
+
+.contact > p > a {
+  color: white;
+  text-decoration: underline;
+}
+
+
+
+
+
+@media screen and (max-width: 1252px){
+  .smallpic > div > p {
+    position: absolute;
+    top: 99%;
+    left: 6rem;
+}
+}
+
+
+@media only screen and (max-width: 1228px) {
+
+  header {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    color: black;
+    height: 150px;
+    width: 100%;
+  }
+  
+  .logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-self: center;
+  }
+  .logo > .logo_container {
+    position: relative;
+    bottom: 0.3rem
+  }
+  
+  nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .bigpic{
+    width: 50%;
+  }
+  .smallpic{
+    width: 50%;
+  }
+ 
+  .smallpic > div > p {
+    position: absolute;
+    top: 99%;
+    left: 6rem;
+}
+
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+  header{
+    height: 200px;
+  }
+
+  .pics{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .pics> div{
+    width: 100%;
+  }
+
+  .busi{
+    height: 1800px;
+  }
+
+  .first-row-bus{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .first-row-bus>div{
+    width: 100%;
+  }
+
+  .second-row-bus{
+    flex-direction: column;
+  }
+  .second-row-bus>div{
+    width: 100%;
+  }
+  
+  .editor{
+    margin-top: 16%;
+    height: 1780px;
+  }
+
+  .editor>.editor_child{
+    flex-direction: column;
+  }
+
+  .editor>.editor_child>.bigpic{
+    width: 100%;
+  } 
+  .smallpic{
+    width: 100%;
+  }
+
+  .smallpic > div > img {
+    height: 230px;
+    width: 100%;
+  }
+  .smallpic > div >span{
+    left: 2rem;
+    bottom:5rem;
+  }
+
+  .smallpic > div >h4{
+    top: 10rem;
+    left: 2rem;
+  }
+
+  .smallpic > div > p {
+    position: absolute;
+    top: 88%;
+    left: 2rem;
+  }
+
+  .busi{
+    height: 2000px;
+  }
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    height: 415px;
+
+  }
+
+  footer>div{
+    width: 100% !important;
+  }
+
+}
+
+@media screen and (max-width: 522px){
+
+  header{
+    height: 320px;
+  }
+
+  header>nav{
+    justify-content: center;
+  }
+
+  header>nav>ul{
+    display: flex;
+    flex-direction: column;
+  }
+  .busi{
+    height: 2170px;
+  }
+  footer{
+    height: 756px;
+  }
+  footer>.sotoon{
+  display: flex;
+  flex-direction: column;
+  }
+  .sotoon>.sotoon1{
+    margin: 0 auto;
+  }
+
+  .sotoon > .sotoon2 {
+    margin: 0 auto;
+}
+}
